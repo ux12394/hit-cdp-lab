@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug 31 18:23:24 2024
+# Process ID: 21160
+# Current directory: D:/Vivado_Project/RAM/RAM.runs/synth_1
+# Command line: vivado.exe -log bram_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_top.tcl
+# Log file: D:/Vivado_Project/RAM/RAM.runs/synth_1/bram_top.vds
+# Journal file: D:/Vivado_Project/RAM/RAM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bram_top.tcl -notrace

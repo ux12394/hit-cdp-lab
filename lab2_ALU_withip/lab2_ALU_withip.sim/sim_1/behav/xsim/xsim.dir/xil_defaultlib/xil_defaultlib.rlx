@@ -1,0 +1,13 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/sim/add32_0.v,1724826650,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.srcs/sources_1/new/ALU.v,,add32_0,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA.v,1724826650,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA_16.v,,CLA,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA_16.v,1724826650,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder.v,,CLA_16,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/add32.v,1724826650,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/sim/add32_0.v,,add32,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder.v,1724826650,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder_4.v,,adder,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder_4.v,1724826650,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/add32.v,,adder_4,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.srcs/sim_1/new/ALU_tb.v,1724827685,verilog,,,,ALU_tb,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.srcs/sources_1/new/ALU.v,1724826877,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.srcs/sim_1/new/ALU_tb.v,,ALU,,,../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src,,,,,

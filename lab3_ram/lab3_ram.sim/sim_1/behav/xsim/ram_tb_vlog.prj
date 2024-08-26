@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab3_ram.gen/sources_1/ip/regfile_0/src/regfile.v" \
+"../../../../lab3_ram.gen/sources_1/ip/regfile_0/sim/regfile_0.v" \
+"../../../../lab3_ram.gen/sources_1/ip/block_ram/sim/block_ram.v" \
+"../../../../lab3_ram.srcs/sources_1/new/ram.v" \
+"../../../../lab3_ram.srcs/sim_1/new/ram_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

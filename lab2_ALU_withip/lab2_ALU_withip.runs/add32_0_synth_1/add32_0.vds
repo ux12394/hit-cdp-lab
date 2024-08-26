@@ -1,0 +1,216 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Aug 28 14:30:56 2024
+# Process ID: 26036
+# Current directory: E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.runs/add32_0_synth_1
+# Command line: vivado.exe -log add32_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source add32_0.tcl
+# Log file: E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.runs/add32_0_synth_1/add32_0.vds
+# Journal file: E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.runs/add32_0_synth_1\vivado.jou
+# Running On        :LAPTOP-K550ROTT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22000
+# Processor Detail  :AMD Ryzen 7 6800H with Radeon Graphics         
+# CPU Frequency     :3194 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16371 MB
+# Swap memory       :16642 MB
+# Total Virtual     :33014 MB
+# Available Virtual :12807 MB
+#-----------------------------------------------------------
+source add32_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 532.320 ; gain = 202.141
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/COLLEGE/homework/hit-cdp-lab/adder_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: add32_0
+Command: synth_design -top add32_0 -part xc7k70tfbv676-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7612
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 997.195 ; gain = 447.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'add32_0' [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/synth/add32_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'add32' [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/add32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16' [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA_16.v:24]
+INFO: [Synth 8-6157] synthesizing module 'adder_4' [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder_4.v:24]
+INFO: [Synth 8-6157] synthesizing module 'adder' [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder.v:24]
+INFO: [Synth 8-6157] synthesizing module 'CLA' [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CLA' (0#1) [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'adder_4' (0#1) [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder_4.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16' (0#1) [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA_16.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'add32' (0#1) [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/src/add32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'add32_0' (0#1) [e:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.gen/sources_1/ip/add32_0/synth/add32_0.v:53]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1107.727 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1107.727 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1107.727 ; gain = 558.031
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1107.727 ; gain = 558.031
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 108   
+	   3 Input      1 Bit         XORs := 10    
+	   4 Input      1 Bit         XORs := 20    
+	   5 Input      1 Bit         XORs := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7k70tfbv676-1 does not have CEAM library.
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    20|
+|2     |LUT3 |    14|
+|3     |LUT4 |    15|
+|4     |LUT5 |    20|
+|5     |LUT6 |    49|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   118|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1300.461 ; gain = 750.766
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1300.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1389.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9fe64941
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1389.910 ; gain = 845.234
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1712.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.runs/add32_0_synth_1/add32_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1712.168 ; gain = 322.258
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP add32_0, cache-ID = 29e0745f5ca0539b
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1712.215 ; gain = 0.020
+INFO: [Common 17-1381] The checkpoint 'E:/COLLEGE/homework/hit-cdp-lab/lab2_ALU_withip/lab2_ALU_withip.runs/add32_0_synth_1/add32_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file add32_0_utilization_synth.rpt -pb add32_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 28 14:31:29 2024...

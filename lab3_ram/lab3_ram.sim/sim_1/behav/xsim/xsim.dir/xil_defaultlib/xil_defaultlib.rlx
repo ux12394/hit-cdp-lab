@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.gen/sources_1/ip/block_ram/sim/block_ram.v,1725114849,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.srcs/sources_1/new/ram.v,,block_ram,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.gen/sources_1/ip/regfile_0/sim/regfile_0.v,1725171912,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.gen/sources_1/ip/block_ram/sim/block_ram.v,,regfile_0,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.gen/sources_1/ip/regfile_0/src/regfile.v,1725171912,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.gen/sources_1/ip/regfile_0/sim/regfile_0.v,,regfile,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.srcs/sim_1/new/ram_tb.v,1725177482,verilog,,,,ram_tb,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.srcs/sources_1/new/ram.v,1725178105,verilog,,E:/COLLEGE/homework/hit-cdp-lab/lab3_ram/lab3_ram.srcs/sim_1/new/ram_tb.v,,ram,,,,,,,,

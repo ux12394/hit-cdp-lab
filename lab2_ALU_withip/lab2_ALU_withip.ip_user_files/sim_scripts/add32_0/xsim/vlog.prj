@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src" \
+"../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA.v" \
+"../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src/CLA_16.v" \
+"../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder.v" \
+"../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src/adder_4.v" \
+"../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/src/add32.v" \
+"../../../../lab2_ALU_withip.gen/sources_1/ip/add32_0/sim/add32_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
