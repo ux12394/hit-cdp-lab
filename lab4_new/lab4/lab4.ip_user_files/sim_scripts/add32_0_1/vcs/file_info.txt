@@ -1,0 +1,10 @@
+xpm_cdc.sv,systemverilog,xpm,E:/vivado/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+xpm_memory.sv,systemverilog,xpm,E:/vivado/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+xpm_VCOMP.vhd,vhdl,xpm,E:/vivado/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+CLA.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/add32_0_1/src/CLA.v,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+CLA_16.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/add32_0_1/src/CLA_16.v,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+adder.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/add32_0_1/src/adder.v,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+adder_4.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/add32_0_1/src/adder_4.v,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+add32.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/add32_0_1/src/add32.v,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+add32_0.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/add32_0_1/sim/add32_0.v,incdir="../../../../lab4.gen/sources_1/ip/add32_0_1/src"
+glbl.v,Verilog,xil_defaultlib,glbl.v

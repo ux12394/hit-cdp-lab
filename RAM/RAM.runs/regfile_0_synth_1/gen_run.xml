@@ -3,9 +3,9 @@
   <File Type="PA-TCL" Name="regfile_0.tcl"/>
   <File Type="REPORTS-TCL" Name="regfile_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="regfile_0.vds"/>
-  <File Type="RDS-DCP" Name="regfile_0.dcp"/>
   <File Type="RDS-UTIL" Name="regfile_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="regfile_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="regfile_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/regfile_0" RelGenDir="$PGENDIR/regfile_0">
     <File Path="$PSRCDIR/sources_1/ip/regfile_0/regfile_0.xci">
       <FileInfo>

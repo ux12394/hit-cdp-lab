@@ -1,10 +1,10 @@
-0.6
-2019.2
-Nov  6 2019
-21:57:16
-D:/Vivado_Project/RAM/RAM.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-D:/Vivado_Project/RAM/RAM.srcs/sim_1/new/tb_bram.v,1725116104,verilog,,,,tb_bram,,,,,,,,
-D:/Vivado_Project/RAM/RAM.srcs/sources_1/ip/block_ram/sim/block_ram.v,1725011186,verilog,,D:/Vivado_Project/RAM/RAM.srcs/sources_1/new/bram_top.v,,block_ram,,,,,,,,
-D:/Vivado_Project/RAM/RAM.srcs/sources_1/ip/regfile_0/sim/regfile_0.v,1725025215,verilog,,D:/Vivado_Project/RAM/RAM.srcs/sources_1/ip/block_ram/sim/block_ram.v,,regfile_0,,,,,,,,
-D:/Vivado_Project/RAM/RAM.srcs/sources_1/ip/regfile_0/sources_1/new/regfile.v,1725025215,verilog,,D:/Vivado_Project/RAM/RAM.srcs/sources_1/ip/regfile_0/sim/regfile_0.v,,regfile,,,,,,,,
-D:/Vivado_Project/RAM/RAM.srcs/sources_1/new/bram_top.v,1725110944,verilog,,D:/Vivado_Project/RAM/RAM.srcs/sim_1/new/tb_bram.v,,bram_top,,,,,,,,
+0.7
+2020.2
+May 22 2024
+19:03:11
+E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.gen/sources_1/ip/block_ram/sim/block_ram.v,1725011186,verilog,,E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.srcs/sources_1/new/bram_top.v,,block_ram,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.gen/sources_1/ip/regfile_0/sim/regfile_0.v,1725025215,verilog,,,,regfile_0,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.gen/sources_1/ip/regfile_0/sources_1/new/regfile.v,1725025215,verilog,,E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.gen/sources_1/ip/regfile_0/sim/regfile_0.v,,regfile,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.srcs/sim_1/new/tb_bram.v,1725116104,verilog,,,,tb_bram,,,,,,,,
+E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.srcs/sources_1/new/bram_top.v,1725110944,verilog,,E:/COLLEGE/homework/hit-cdp-lab/RAM/RAM.srcs/sim_1/new/tb_bram.v,,bram_top,,,,,,,,

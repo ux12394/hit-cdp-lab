@@ -1,0 +1,5 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.ip_user_files/ipstatic/hdl/axi_crossbar_v2_1_vl_rfs.v,1724153675,verilog,,,,axi_crossbar_v2_1_21_addr_arbiter;axi_crossbar_v2_1_21_addr_arbiter_sasd;axi_crossbar_v2_1_21_addr_decoder;axi_crossbar_v2_1_21_arbiter_resp;axi_crossbar_v2_1_21_axi_crossbar;axi_crossbar_v2_1_21_crossbar;axi_crossbar_v2_1_21_crossbar_sasd;axi_crossbar_v2_1_21_decerr_slave;axi_crossbar_v2_1_21_si_transactor;axi_crossbar_v2_1_21_splitter;axi_crossbar_v2_1_21_wdata_mux;axi_crossbar_v2_1_21_wdata_router,,,../../../../lab4.gen/sources_1/ip/ma_river_core_0/imports/super;../../../../lab4.ip_user_files/ipstatic;../../../../lab4.ip_user_files/ipstatic/hdl,,,,,

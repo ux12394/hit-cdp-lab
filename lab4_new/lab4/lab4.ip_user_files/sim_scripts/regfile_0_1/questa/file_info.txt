@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../vivado/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../vivado/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../vivado/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd,
+regfile.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/regfile_0_1/src/regfile.v,
+regfile_0.v,verilog,xil_defaultlib,../../../../lab4.gen/sources_1/ip/regfile_0_1/sim/regfile_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
