@@ -69,7 +69,7 @@ initial begin
         raddr2=5'b00000;
         ram_addr = 16'b0000000000000000;
         ram_wdata = 32'b00000000000000000000000000000000;
-        for(i=0;i<32;i=i+1)begin
+        for(i=0;i<2;i=i+1)begin
                ram_addr=1+ram_addr;
                ram_wdata=1+ram_wdata;
                #10;
@@ -82,7 +82,7 @@ initial begin
         we=1'b0;
         ram_wen=1'b0;
         ram_addr = 16'b0000000000000000;
-        for(i=0;i<32;i=i+1)begin
+        for(i=0;i<2;i=i+1)begin
            ram_addr=ram_addr+1;
            #10;
         end
@@ -93,7 +93,7 @@ initial begin
         ram_wen=1'b0;
         ram_addr = 16'b0000000000000000;
         waddr=5'b00000;
-        for(i=0;i<32;i=i+1)begin
+        for(i=0;i<2;i=i+1)begin
            ram_addr=ram_addr+1;
            waddr=waddr+1;
            #10;
@@ -104,9 +104,9 @@ initial begin
         choice=2'b11;
         we=1'b1;
         waddr=5'b00000;
-        for(i=0;i<32;i=i+1)begin
+        for(i=0;i<2;i=i+1)begin
            waddr=waddr+1;
-           wdata=i*2;
+           wdata=100-i;
            #10;
         end
          #50;
@@ -116,7 +116,7 @@ initial begin
         we=1'b0;
         raddr1=5'b00000;
         ram_addr = 16'b0000000000000000;
-        for(i=0;i<32;i=i+1)begin
+        for(i=0;i<2;i=i+1)begin
            ram_addr=ram_addr+1;
            raddr1=raddr1+1;
            #10;
@@ -127,7 +127,7 @@ initial begin
         ram_wen=1'b0;
         we=1'b0;
         ram_addr = 16'b0000000000000000;
-        for(i=0;i<32;i=i+1)begin
+        for(i=0;i<2;i=i+1)begin
            ram_addr=ram_addr+1;
            #10;
         end

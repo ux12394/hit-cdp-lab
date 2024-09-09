@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Sep  2 19:45:36 2024
-# Process ID: 11836
+# Start of session at: Mon Sep  9 10:50:55 2024
+# Process ID: 8780
 # Current directory: E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1
 # Command line: vivado.exe -log soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_top.tcl
 # Log file: E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/soc_top.vds
@@ -19,10 +19,10 @@
 # Host memory       :16371 MB
 # Swap memory       :16642 MB
 # Total Virtual     :33014 MB
-# Available Virtual :14959 MB
+# Available Virtual :15334 MB
 #-----------------------------------------------------------
 source soc_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 530.516 ; gain = 201.914
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 531.543 ; gain = 201.359
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lcd_controller/lcd_controller.srcs/sources_1'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
@@ -54,38 +54,513 @@ INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: [Device 21-9227] Part: xc7a200tfbg676-2 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8784
+INFO: [Synth 8-7075] Helper process launched with PID 22664
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1459.098 ; gain = 446.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1459.953 ; gain = 448.113
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-10929] literal value 'b101011 truncated to fit in 5 bits [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:119]
-WARNING: [Synth 8-10929] literal value 'b100011 truncated to fit in 5 bits [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:137]
-ERROR: [Synth 8-2577] procedural assignment to a non-register wen is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:79]
-ERROR: [Synth 8-2577] procedural assignment to a non-register waddr is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:80]
-ERROR: [Synth 8-2577] procedural assignment to a non-register rden1 is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:81]
-ERROR: [Synth 8-2577] procedural assignment to a non-register raddr1 is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:82]
-ERROR: [Synth 8-2577] procedural assignment to a non-register rden2 is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:83]
-ERROR: [Synth 8-2577] procedural assignment to a non-register raddr2 is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:84]
-ERROR: [Synth 8-2577] procedural assignment to a non-register alu_en is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:85]
-ERROR: [Synth 8-2577] procedural assignment to a non-register mem_rd is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:86]
-ERROR: [Synth 8-2577] procedural assignment to a non-register mem_wr is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:87]
-ERROR: [Synth 8-2577] procedural assignment to a non-register jmp is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:88]
-ERROR: [Synth 8-2577] procedural assignment to a non-register alu_card is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:91]
-ERROR: [Synth 8-2577] procedural assignment to a non-register invalid is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:92]
-ERROR: [Synth 8-2577] procedural assignment to a non-register alu_card is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:96]
-ERROR: [Synth 8-2577] procedural assignment to a non-register invalid is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:97]
-ERROR: [Synth 8-2577] procedural assignment to a non-register alu_card is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:101]
-ERROR: [Synth 8-2577] procedural assignment to a non-register invalid is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:102]
-ERROR: [Synth 8-2577] procedural assignment to a non-register alu_card is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:106]
-ERROR: [Synth 8-2577] procedural assignment to a non-register invalid is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:107]
-ERROR: [Synth 8-2577] procedural assignment to a non-register alu_card is not permitted, left-hand side should be reg/integer/time/genvar [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:111]
-ERROR: [Synth 8-439] module 'soc_top' not found
+INFO: [Synth 8-6157] synthesizing module 'soc_top' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mr_bram' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/mr_bram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mr_bram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/mr_bram_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/lcd_controller_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_controller_0' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/lcd_controller_0_stub.v:5]
+WARNING: [Synth 8-689] width (4) of port connection 'rid' does not match port width (6) of module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:204]
+WARNING: [Synth 8-689] width (4) of port connection 'bid' does not match port width (6) of module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:227]
+WARNING: [Synth 8-7071] port 'dma_start_en' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'dma_address' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'dma_length' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'dma_iack' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'dma_ready_dev' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'grc_io_port_raddress' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'grc_io_port_waddress' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'grc_io_port_wenable' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7071] port 'grc_io_port_wdataword' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+WARNING: [Synth 8-7023] instance 'lcd' of module 'lcd_controller_0' has 59 connections declared, but only 50 given [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:173]
+INFO: [Synth 8-6157] synthesizing module 'ma_river_core_0' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/ma_river_core_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ma_river_core_0' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/ma_river_core_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'debug_wb_pc0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wen0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wnum0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wdata0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_pc1' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wen1' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wnum1' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wdata1' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_pc' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wen' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wnum' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7071] port 'debug_wb_rf_wdata' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+WARNING: [Synth 8-7023] instance 'mrcore' of module 'ma_river_core_0' has 51 connections declared, but only 39 given [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:276]
+INFO: [Synth 8-6157] synthesizing module 'checker_wrapper' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/checker_wrapper.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/checker_wrapper.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'checker_wrapper' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/checker_wrapper.v:8]
+INFO: [Synth 8-6157] synthesizing module 'axi_bus' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/axi_bus_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_bus' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/axi_bus_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'axi_bus' is unconnected for instance 'axib' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:422]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'axi_bus' is unconnected for instance 'axib' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:422]
+WARNING: [Synth 8-7023] instance 'axib' of module 'axi_bus' has 78 connections declared, but only 76 given [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:422]
+INFO: [Synth 8-6157] synthesizing module 'inst_decoder' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'inst_decoder' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder_checker' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:27]
+	Parameter SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:83]
+INFO: [Synth 8-6157] synthesizing module 'ans_ram' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/ans_ram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ans_ram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/ans_ram_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'input_ram' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/input_ram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'input_ram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/.Xil/Vivado-8780-LAPTOP-K550ROTT/realtime/input_ram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_checker' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'soc_top' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/soc_top.v:11]
+WARNING: [Synth 8-7129] Port checker_raddr[31] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[30] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[29] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[28] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[27] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[26] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[25] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[24] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[23] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[22] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[21] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[20] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[19] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[18] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[17] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_raddr[16] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[31] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[30] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[29] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[28] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[27] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[26] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[25] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[24] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[23] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[22] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[21] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[20] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[19] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[18] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[17] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port checker_waddr[16] in module decoder_checker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wlast in module checker_wrapper is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1571.109 ; gain = 558.723
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.883 ; gain = 567.043
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.883 ; gain = 567.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.883 ; gain = 567.043
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1578.883 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/input_ram/input_ram/input_ram_in_context.xdc] for cell 'checker/ir'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/input_ram/input_ram/input_ram_in_context.xdc] for cell 'checker/ir'
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/ans_ram/ans_ram/ans_ram_in_context.xdc] for cell 'checker/ar'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/ans_ram/ans_ram/ans_ram_in_context.xdc] for cell 'checker/ar'
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/axi_bus/axi_bus/axi_bus_in_context.xdc] for cell 'axib'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/axi_bus/axi_bus/axi_bus_in_context.xdc] for cell 'axib'
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll'
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/ma_river_core_0/ma_river_core_0/ma_river_core_0_in_context.xdc] for cell 'mrcore'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/ma_river_core_0/ma_river_core_0/ma_river_core_0_in_context.xdc] for cell 'mrcore'
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/lcd_controller_0/lcd_controller_0/lcd_controller_0_in_context.xdc] for cell 'lcd'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/lcd_controller_0/lcd_controller_0/lcd_controller_0_in_context.xdc] for cell 'lcd'
+Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/mr_bram/mr_bram/mr_bram_in_context.xdc] for cell 'ram'
+Finished Parsing XDC File [e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/mr_bram/mr_bram/mr_bram_in_context.xdc] for cell 'ram'
+Parsing XDC File [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/constrs_1/imports/new/cons.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/constrs_1/imports/new/cons.xdc:3]
+Finished Parsing XDC File [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/constrs_1/imports/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/constrs_1/imports/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1601.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1601.586 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'axib' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for checker/ir. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for checker/ar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axib. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pll. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mrcore. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for lcd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ram. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'checker_wrapper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                            00010 |                              000
+                 iSTATE3 |                            10000 |                              001
+                 iSTATE0 |                            01000 |                              010
+                 iSTATE2 |                            00100 |                              100
+                 iSTATE1 |                            00001 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'checker_wrapper'
+WARNING: [Synth 8-327] inferring latch for variable 'waddr_reg' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'raddr1_reg' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_card_reg' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/new/inst_decoder.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'rdata_reg' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   5 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (your_decoder/waddr_reg[4]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/waddr_reg[3]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/waddr_reg[2]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/waddr_reg[1]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/waddr_reg[0]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/raddr1_reg[4]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/raddr1_reg[3]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/raddr1_reg[2]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/raddr1_reg[1]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/raddr1_reg[0]) is unused and will be removed from module soc_top.
+WARNING: [Synth 8-3332] Sequential element (your_decoder/alu_card_reg[4]) is unused and will be removed from module soc_top.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[31]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[30]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[29]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[28]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[27]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[26]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[25]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[24]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[23]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[22]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[21]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[20]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[19]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[18]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[17]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[16]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[15]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[14]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[13]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[12]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[11]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[10]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[9]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[8]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[7]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[6]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[5]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[4]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[3]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[2]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[1]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'checker/testend_reg[0]/Q' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.srcs/sources_1/imports/new/decoder_checker.v:159]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_pll          |         1|
+|2     |mr_bram          |         1|
+|3     |lcd_controller_0 |         1|
+|4     |ma_river_core_0  |         1|
+|5     |axi_bus          |         1|
+|6     |ans_ram          |         1|
+|7     |input_ram        |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |ans_ram        |     1|
+|2     |axi_bus        |     1|
+|3     |clk_pll        |     1|
+|4     |input_ram      |     1|
+|5     |lcd_controller |     1|
+|6     |ma_river_core  |     1|
+|7     |mr_bram        |     1|
+|8     |BUFG           |     1|
+|9     |CARRY4         |    10|
+|10    |LUT1           |     4|
+|11    |LUT2           |    16|
+|12    |LUT3           |    30|
+|13    |LUT4           |    22|
+|14    |LUT5           |    14|
+|15    |LUT6           |    65|
+|16    |FDRE           |   195|
+|17    |FDSE           |     1|
+|18    |LD             |    32|
+|19    |LDC            |     4|
+|20    |IBUF           |     1|
+|21    |OBUF           |     6|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1603.223 ; gain = 591.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1603.223 ; gain = 567.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1603.223 ; gain = 591.383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1603.223 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1603.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  LD => LDCE: 32 instances
+  LDC => LDCE: 4 instances
+
+Synth Design complete | Checksum: 6bba0954
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 4 Warnings, 0 Critical Warnings and 21 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon Sep  2 19:45:55 2024...
+55 Infos, 126 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1603.223 ; gain = 1059.625
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1603.223 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/soc_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file soc_top_utilization_synth.rpt -pb soc_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 10:51:36 2024...

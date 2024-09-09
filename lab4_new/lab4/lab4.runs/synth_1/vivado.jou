@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Sep  2 19:45:36 2024
-# Process ID: 11836
+# Start of session at: Mon Sep  9 10:50:55 2024
+# Process ID: 8780
 # Current directory: E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1
 # Command line: vivado.exe -log soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_top.tcl
 # Log file: E:/COLLEGE/homework/hit-cdp-lab/lab4_new/lab4/lab4.runs/synth_1/soc_top.vds
@@ -19,6 +19,6 @@
 # Host memory       :16371 MB
 # Swap memory       :16642 MB
 # Total Virtual     :33014 MB
-# Available Virtual :14959 MB
+# Available Virtual :15334 MB
 #-----------------------------------------------------------
 source soc_top.tcl -notrace
