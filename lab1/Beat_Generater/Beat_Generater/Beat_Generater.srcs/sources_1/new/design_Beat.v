@@ -25,13 +25,13 @@ module design_Beat(
     input rst,
     output reg [3:0] out
     );
-    
-    always @(posedge clk or posedge rst) begin
-        if (rst == 1'b1) begin
+reg flag=1'b1;
+    always @(posedge clk ) begin
+        if (flag) begin
             out <= 4'b0001;
         end
         else begin
-            out <= {out[0], out[3:1]};
+            out =out*2;
         end
     end
 endmodule

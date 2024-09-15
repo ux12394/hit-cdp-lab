@@ -1,4 +1,6 @@
 # compile vhdl design source files
+vhdl fifo_generator_v13_2_5  \
+"../../../../lab5.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.vhd" \
 
 # Do not sort compile order
 nosort

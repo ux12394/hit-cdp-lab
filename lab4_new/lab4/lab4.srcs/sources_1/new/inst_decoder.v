@@ -21,26 +21,26 @@
 
 
 module inst_decoder(
-    input[31:0]     inst,
-    output  reg       wen,
+    input[31:0]         inst,
+    output reg          wen,
     output reg[4:0]     waddr,
-    output reg         rden1,
+    output reg          rden1,
     output reg[4:0]     raddr1,
     output reg          rden2,
     output reg[4:0]     raddr2,
     output reg          alu_en,
     output reg[4:0]     alu_card,
-    output reg         mem_rd,
-    output reg         mem_wr,
-    output reg        jmp,
-    output reg      invalid
+    output reg          mem_rd,
+    output reg          mem_wr,
+    output reg          jmp,
+    output reg          invalid
 );
 
-reg [4:0]rs;
-reg [4:0]rt;
-reg [4:0]rd;
+reg [4:0] rs;
+reg [4:0] rt;
+reg [4:0] rd;
 reg [10:0] cal;//计算码
-reg [5:0]op;//操作码
+reg [5:0] op;//操作码
 reg [4:0] base;
 reg [15:0] offset;
 reg [25:0] instr_index;

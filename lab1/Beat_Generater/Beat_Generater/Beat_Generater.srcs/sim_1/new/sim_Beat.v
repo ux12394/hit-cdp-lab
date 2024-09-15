@@ -29,11 +29,7 @@ module sim_Beat();
         clk = 0;
         rst = 0;
     end
-    
-    always #10 clk = ~clk;
-    always #100 rst = ~rst;
-    
-    
+     
     design_Beat beat(
         .clk(clk),
         .rst(rst),

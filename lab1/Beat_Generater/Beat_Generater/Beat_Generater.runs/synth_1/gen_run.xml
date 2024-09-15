@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1724664688">
   <File Type="PA-TCL" Name="design_Beat.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_Beat_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_Beat_reports.tcl"/>
   <File Type="RDS-RDS" Name="design_Beat.vds"/>
   <File Type="RDS-UTIL" Name="design_Beat_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="design_Beat_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="design_Beat.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_Beat_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="design_Beat_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/design_Beat.v">
