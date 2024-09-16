@@ -36,8 +36,8 @@ module design_Beat(
     end
     always @(posedge clk) begin
         if (rst) begin
-            if (out==5'b00000) begin
-                out = 5'b00001;
+            if (out==8'b00000000) begin
+                out = 8'b00000001;
             end
             else begin
                 out ={out[6:0],out[7]};

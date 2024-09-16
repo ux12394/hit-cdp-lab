@@ -35,7 +35,6 @@
 module inst_decoder(
     input[31:0]         inst,//处理器待执行的指令
     input [7:0]         out,               //时钟
-    input               clk,
     output reg          wen,//指令是否写回寄存器
     output reg          isR,//是否是r指令
     output reg          isI,//是否是I指令
@@ -52,8 +51,6 @@ module inst_decoder(
     output reg          mem_wr,//指令是否需要写存储器
     output reg          jmp,//指令是否会直接修改PC
     output reg          invalid,//输入的指令无法识别
-    output  [31:0]       rdata1,//读到寄存器1的数据
-    output  [31:0]       rdata2,//读到的寄存器2数据
     output reg [25:0]   instr_index,
     output reg [4:0]    sa,
     output reg  select_for_writereg
@@ -106,6 +103,7 @@ always @(posedge out[2]) begin
         mem_wr<=0;
         jmp<=0;
         select_for_writereg<=0;
+        sa=5'b00000;
         //加法
         if(cal==ADD)begin
             alu_card=5'b00001;

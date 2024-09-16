@@ -66,7 +66,8 @@ reg [4:0]  reg_addr2;
 reg [31:0] reg_rdata1;
 
     always @(posedge out[4]) begin
-        
+        rdata1_unsigned=$unsigned(rdata1);
+        rdata2_unsigned=$unsigned(rdata2);
         wdata=32'h00000000;
         //R型指令
         //可能是ALU指令，还有条件转移，比较
@@ -109,8 +110,6 @@ reg [31:0] reg_rdata1;
             end
             //比较
             else begin
-                rdata1_unsigned=$unsigned(rdata1);
-                rdata2_unsigned=$unsigned(rdata2);
                 wdata[0]=(rdata1==rdata2)?1:0;
                 wdata[2]=(rdata1_unsigned<rdata2_unsigned)?1:0;
                 wdata[1]=(rdata1<rdata2)?1:0;

@@ -38,7 +38,7 @@ module cpu(
     input           resetn,             // 低有效复位信号
 
     output          inst_sram_en,       // 指令存储器读使能
-    output   [31:0]  inst_sram_addr,     // 指令存储器读地址
+    output  [31:0]  inst_sram_addr,     // 指令存储器读地址
     input   [31:0]  inst_sram_rdata,    // 指令存储器读出的数据，指令
 //16×1的存储器
     output          data_sram_en,       // 数据存储器端口读/写使能
@@ -115,7 +115,6 @@ pc my_pc(
 // 译码
 inst_decoder my_decode(
     .out(out),
-    .clk(clk),
     .inst(inst_sram_rdata),
     .wen(wen),
     .isI(isI),
@@ -194,18 +193,6 @@ access my_access(
     .data_sram_wdata(data_sram_wdata)
 );
 
-
-// write_back my_write_back(
-//     .out(out),
-//     .clk(clk),
-//     .select_for_writereg(select_for_writereg),
-//     .waddr(waddr),
-//     .wdata(wdata),
-//     .wen(wen),
-//     .pc(pc),
-//     .data_sram_rdata(data_sram_rdata),
-//     .reg_debug_wb_rf_wdata(reg_debug_wb_rf_wdata)
-// );
 always @(posedge out[7]) begin
     reg_debug_wb_rf_wen=wen;
     debug_wb_rf_wnum=waddr;
