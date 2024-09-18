@@ -35,7 +35,6 @@
 module inst_decoder(
     input[31:0]         inst,//处理器待执行的指令
     input [7:0]         out,               //时钟
-    output reg          wen,//指令是否写回寄存器
     output reg          isR,//是否是r指令
     output reg          isI,//是否是I指令
     output reg          isJ,//是否是J指令
@@ -93,7 +92,6 @@ always @(posedge out[2]) begin
         rt=inst[20:16];
         rd=inst[15:11];
         cal=inst[5:0];
-        wen<=(rd==5'b00000)?0:1;
         waddr<=rd;
         rden1<=1;
         raddr1<=rs;
@@ -156,7 +154,6 @@ always @(posedge out[2]) begin
         isI=1;
         isJ=0;
         isR=0;
-        wen<=0;
         base=inst[25:21];
         rt=inst[20:16];
         offset=inst[15:0];
@@ -177,7 +174,6 @@ always @(posedge out[2]) begin
         isI=1;
         isJ=0;
         isR=0;
-        wen<=1;
         base=inst[25:21];
         rt=inst[20:16];
         offset=inst[15:0];
@@ -192,7 +188,6 @@ always @(posedge out[2]) begin
         mem_wr<=0;
         select_for_writereg<=1;
         jmp<=0;
-        wen<=1;
         invalid<=0;
      end
      //跳转
@@ -200,7 +195,6 @@ always @(posedge out[2]) begin
         isI=0;
         isR=0;
         isJ=1;
-        wen<=0;
         instr_index=inst[25:0];
         waddr<=5'b00000;
         rden1<=0;
@@ -221,7 +215,6 @@ always @(posedge out[2]) begin
         rs=inst[25:21];
         rt=inst[20:16];
         rd=inst[15:11];
-        wen<=1;
         waddr<=rd;
         rden1<=1;
         raddr1<=rs;
@@ -253,7 +246,6 @@ always @(posedge out[2]) begin
         mem_rd=1'b0;
         mem_wr=1'b0;
         invalid<=0;
-        wen<=0;
         waddr<=5'b00000;
      end
      //不合格指令
@@ -262,7 +254,6 @@ always @(posedge out[2]) begin
         isR=0;
         isJ=0;
          invalid<=1;
-         wen<=0;
          waddr<=5'b00000;
          rden1<=0;
          raddr1<=5'b00000;

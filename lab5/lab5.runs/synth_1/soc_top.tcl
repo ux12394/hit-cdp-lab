@@ -56,6 +56,12 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param synth.incrementalSynthesisCache C:/Users/ABC/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13224-LAPTOP-K550ROTT/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbg676-2
 
@@ -87,6 +93,7 @@ add_files E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/hitco
 add_files E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/hitcoa_at2024/cpu_ans.coe
 add_files E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/hitcoa_at2024/cpu_checker.coe
 read_verilog -library xil_defaultlib {
+  E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/Beat_generate.v
   E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v
   E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v
   E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/new/checker_wrapper.v

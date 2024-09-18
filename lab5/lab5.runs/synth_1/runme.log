@@ -8,12 +8,12 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Fri Sep 13 22:16:21 2024
+  **** Start of session at: Wed Sep 18 19:29:16 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source soc_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 530.957 ; gain = 199.711
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 530.891 ; gain = 200.098
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/COLLEGE/homework/hit-cdp-lab/lcd_controller/lcd_controller.srcs/sources_1'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
@@ -44,17 +44,17 @@ INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: [Device 21-9227] Part: xc7a200tfbg676-2 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14396
+INFO: [Synth 8-7075] Helper process launched with PID 16960
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1459.512 ; gain = 448.254
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1458.727 ; gain = 448.371
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'soc_top' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:17]
-INFO: [Synth 8-6157] synthesizing module 'clk_pll' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mr_bram' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/mr_bram_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mr_bram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/mr_bram_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/lcd_controller_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_controller_0' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/lcd_controller_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mr_bram' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/mr_bram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mr_bram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/mr_bram_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/lcd_controller_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_controller_0' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/lcd_controller_0_stub.v:5]
 WARNING: [Synth 8-689] width (4) of port connection 'rid' does not match port width (6) of module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:210]
 WARNING: [Synth 8-689] width (4) of port connection 'bid' does not match port width (6) of module 'lcd_controller_0' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:233]
 WARNING: [Synth 8-7071] port 'dma_start_en' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:179]
@@ -67,8 +67,8 @@ WARNING: [Synth 8-7071] port 'grc_io_port_waddress' of module 'lcd_controller_0'
 WARNING: [Synth 8-7071] port 'grc_io_port_wenable' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:179]
 WARNING: [Synth 8-7071] port 'grc_io_port_wdataword' of module 'lcd_controller_0' is unconnected for instance 'lcd' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:179]
 WARNING: [Synth 8-7023] instance 'lcd' of module 'lcd_controller_0' has 59 connections declared, but only 50 given [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:179]
-INFO: [Synth 8-6157] synthesizing module 'ma_river_core_0' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/ma_river_core_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ma_river_core_0' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/ma_river_core_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ma_river_core_0' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/ma_river_core_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ma_river_core_0' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/ma_river_core_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'debug_wb_pc0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:282]
 WARNING: [Synth 8-7071] port 'debug_wb_rf_wen0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:282]
 WARNING: [Synth 8-7071] port 'debug_wb_rf_wnum0' of module 'ma_river_core_0' is unconnected for instance 'mrcore' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:282]
@@ -85,65 +85,54 @@ WARNING: [Synth 8-7023] instance 'mrcore' of module 'ma_river_core_0' has 51 con
 INFO: [Synth 8-6157] synthesizing module 'checker_wrapper' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/new/checker_wrapper.v:8]
 INFO: [Synth 8-155] case statement is not full and has no default [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/new/checker_wrapper.v:131]
 INFO: [Synth 8-6155] done synthesizing module 'checker_wrapper' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/imports/new/checker_wrapper.v:8]
-INFO: [Synth 8-6157] synthesizing module 'axi_bus' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/axi_bus_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'axi_bus' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/axi_bus_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'axi_bus' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/axi_bus_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_bus' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/axi_bus_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'axi_bus' is unconnected for instance 'axib' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:428]
 WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'axi_bus' is unconnected for instance 'axib' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:428]
 WARNING: [Synth 8-7023] instance 'axib' of module 'axi_bus' has 78 connections declared, but only 76 given [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:428]
-INFO: [Synth 8-6157] synthesizing module 'cpu_inst_rom' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/cpu_inst_rom_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_inst_rom' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/cpu_inst_rom_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'cpu_data_ram' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/cpu_data_ram_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_data_ram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/cpu_data_ram_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cpu_inst_rom' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/cpu_inst_rom_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_inst_rom' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/cpu_inst_rom_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cpu_data_ram' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/cpu_data_ram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_data_ram' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/cpu_data_ram_stub.v:5]
 WARNING: [Synth 8-689] width (4) of port connection 'we' does not match port width (1) of module 'cpu_data_ram' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:532]
 INFO: [Synth 8-6157] synthesizing module 'cpu' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:36]
-INFO: [Synth 8-6157] synthesizing module 'pc' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/pc.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/pc.v:23]
-INFO: [Synth 8-6157] synthesizing module 'inst_decoder' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:29]
+INFO: [Synth 8-6157] synthesizing module 'design_Beat' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/Beat_generate.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'design_Beat' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/Beat_generate.v:29]
+INFO: [Synth 8-6157] synthesizing module 'pc' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/pc.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/pc.v:29]
+INFO: [Synth 8-6157] synthesizing module 'inst_decoder' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:35]
+WARNING: [Synth 8-6090] variable 'invalid' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:267]
+WARNING: [Synth 8-6090] variable 'alu_card' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:268]
+INFO: [Synth 8-6155] done synthesizing module 'inst_decoder' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:35]
 INFO: [Synth 8-6157] synthesizing module 'my_reg' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/register.v:29]
 INFO: [Synth 8-6155] done synthesizing module 'my_reg' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/register.v:29]
-WARNING: [Synth 8-6090] variable 'rden1' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:157]
-WARNING: [Synth 8-6090] variable 'invalid' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:284]
-WARNING: [Synth 8-6090] variable 'alu_card' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:285]
-INFO: [Synth 8-6155] done synthesizing module 'inst_decoder' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:29]
-WARNING: [Synth 8-7071] port 'instr_index' of module 'inst_decoder' is unconnected for instance 'my_decode' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:96]
-WARNING: [Synth 8-7023] instance 'my_decode' of module 'inst_decoder' has 21 connections declared, but only 20 given [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:96]
-INFO: [Synth 8-6157] synthesizing module 'CU' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:23]
-INFO: [Synth 8-6157] synthesizing module 'access' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:23]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7071] port 'raddr1' of module 'my_reg' is unconnected for instance 'reg1' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7071] port 'rdata1' of module 'my_reg' is unconnected for instance 'reg1' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7071] port 'raddr2' of module 'my_reg' is unconnected for instance 'reg1' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7071] port 'rdata2' of module 'my_reg' is unconnected for instance 'reg1' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7071] port 'rden1' of module 'my_reg' is unconnected for instance 'reg1' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7071] port 'rden2' of module 'my_reg' is unconnected for instance 'reg1' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-WARNING: [Synth 8-7023] instance 'reg1' of module 'my_reg' has 10 connections declared, but only 4 given [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:52]
-INFO: [Synth 8-6155] done synthesizing module 'access' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'pc' does not match port width (1) of module 'access' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:150]
-WARNING: [Synth 8-7071] port 'real_next_pc' of module 'access' is unconnected for instance 'my_access' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:148]
-WARNING: [Synth 8-7071] port 'inst_sram_en' of module 'access' is unconnected for instance 'my_access' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:148]
-WARNING: [Synth 8-7071] port 'inst_sram_addr' of module 'access' is unconnected for instance 'my_access' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:148]
-WARNING: [Synth 8-7023] instance 'my_access' of module 'access' has 20 connections declared, but only 17 given [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:148]
+INFO: [Synth 8-6157] synthesizing module 'CU' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:29]
+WARNING: [Synth 8-6090] variable 'wdata' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:81]
+WARNING: [Synth 8-6090] variable 'select_for_pc' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:29]
+INFO: [Synth 8-6157] synthesizing module 'access' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'access' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:29]
 INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:36]
 INFO: [Synth 8-6157] synthesizing module 'cpu_checker' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu_checker.v:43]
 	Parameter SIMULATION bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'cpu_ans_rom' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/cpu_ans_rom_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_ans_rom' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-24900-LAPTOP-K550ROTT/realtime/cpu_ans_rom_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cpu_ans_rom' [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/cpu_ans_rom_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_ans_rom' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/.Xil/Vivado-22652-LAPTOP-K550ROTT/realtime/cpu_ans_rom_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'cpu_checker' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu_checker.v:43]
 INFO: [Synth 8-6155] done synthesizing module 'soc_top' (0#1) [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/soc_top.v:17]
-WARNING: [Synth 8-6014] Unused sequential element real_next_pc_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/pc.v:36]
-WARNING: [Synth 8-6014] Unused sequential element op_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:96]
-WARNING: [Synth 8-6014] Unused sequential element rs_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:103]
-WARNING: [Synth 8-6014] Unused sequential element rt_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:104]
-WARNING: [Synth 8-6014] Unused sequential element rd_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:105]
-WARNING: [Synth 8-6014] Unused sequential element cal_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:106]
-WARNING: [Synth 8-6014] Unused sequential element base_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:171]
-WARNING: [Synth 8-6014] Unused sequential element rdata1_signed_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:92]
-WARNING: [Synth 8-6014] Unused sequential element rdata2_signed_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:93]
-WARNING: [Synth 8-3848] Net inst_sram_en in module/entity cpu does not have driver. [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:40]
-WARNING: [Synth 8-3848] Net inst_sram_addr in module/entity cpu does not have driver. [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:41]
-WARNING: [Synth 8-3848] Net pc in module/entity cpu does not have driver. [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:57]
-WARNING: [Synth 8-3848] Net instr_index in module/entity cpu does not have driver. [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:78]
+WARNING: [Synth 8-6014] Unused sequential element op_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:85]
+WARNING: [Synth 8-6014] Unused sequential element rs_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:91]
+WARNING: [Synth 8-6014] Unused sequential element rt_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:92]
+WARNING: [Synth 8-6014] Unused sequential element rd_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:93]
+WARNING: [Synth 8-6014] Unused sequential element cal_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:94]
+WARNING: [Synth 8-6014] Unused sequential element base_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/inst_decode.v:157]
+WARNING: [Synth 8-6014] Unused sequential element rdata1_unsigned_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:70]
+WARNING: [Synth 8-6014] Unused sequential element rdata2_unsigned_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:71]
+WARNING: [Synth 8-6014] Unused sequential element reg_rdata1_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:132]
+WARNING: [Synth 8-6014] Unused sequential element reg_raddr2_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:133]
+WARNING: [Synth 8-6014] Unused sequential element npc_reg was removed.  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/CU.v:136]
+WARNING: [Synth 8-7137] Register debug_wb_rf_wnum_reg in module cpu has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:152]
+WARNING: [Synth 8-7137] Register debug_wb_rf_wdata_reg in module cpu has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:151]
+WARNING: [Synth 8-7137] Register debug_wb_pc_reg in module cpu has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/cpu.v:205]
 WARNING: [Synth 8-7129] Port checker_raddr[31] in module cpu_checker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port checker_raddr[30] in module cpu_checker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port checker_raddr[29] in module cpu_checker is either unconnected or has no load
@@ -176,88 +165,88 @@ WARNING: [Synth 8-7129] Port checker_waddr[19] in module cpu_checker is either u
 WARNING: [Synth 8-7129] Port checker_waddr[18] in module cpu_checker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port checker_waddr[17] in module cpu_checker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port checker_waddr[16] in module cpu_checker is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wen in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port waddr[4] in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port waddr[3] in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port waddr[2] in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port waddr[1] in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port waddr[0] in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rden1 in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rden2 in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port mem_rd in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port mem_wr in module CU is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_en in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[31] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[30] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[29] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[28] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[27] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[26] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[25] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[24] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[23] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[22] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[21] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[20] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[19] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[18] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[17] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[16] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[15] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[14] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[13] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[12] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[11] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[10] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[9] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[8] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[7] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[6] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[5] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[4] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[3] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[2] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[1] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port inst_sram_addr[0] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[31] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[30] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[29] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[28] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[27] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[26] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[25] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[24] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[23] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[22] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[21] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[20] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[19] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[18] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[17] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[16] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[15] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[14] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[13] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[12] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[11] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[10] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[9] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[8] in module cpu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_sram_rdata[7] in module cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[7] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[6] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[4] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[3] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[2] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[1] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[0] in module access is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[7] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[6] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[5] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[3] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[2] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[1] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[0] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[4] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[3] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[2] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[1] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[0] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[7] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[6] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[5] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[4] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[2] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[1] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[0] in module my_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[7] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[6] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[5] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[4] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[3] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[1] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[0] in module inst_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[7] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[6] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[5] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[4] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[3] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[2] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[1] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[3] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[2] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[1] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[0] in module checker_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[1] in module checker_wrapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1582.723 ; gain = 571.465
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1583.297 ; gain = 572.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1582.723 ; gain = 571.465
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1583.297 ; gain = 572.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1582.723 ; gain = 571.465
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1583.297 ; gain = 572.941
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1582.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1583.297 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -289,21 +278,21 @@ Parsing XDC File [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/dont_to
 Finished Parsing XDC File [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1690.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1688.098 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1690.723 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1688.098 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'axib' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -320,7 +309,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for data_sram. (constraint file  auto
 Applied set_property KEEP_HIERARCHY = SOFT for checker/ansr. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for ram. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'checker_wrapper'
 ---------------------------------------------------------------------------------------------------
@@ -335,39 +324,42 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'check
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'checker_wrapper'
 INFO: [Synth 8-3971] The signal "my_reg:/rf_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 4     
 	   3 Input   32 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 26    
+	               32 Bit    Registers := 23    
 	               26 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
-	                5 Bit    Registers := 5     
+	                5 Bit    Registers := 6     
 	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 18    
+	                1 Bit    Registers := 19    
 +---RAMs : 
-	             1024 Bit	(32 X 32 bit)          RAMs := 2     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 9     
+	   4 Input   32 Bit        Muxes := 1     
 	   3 Input   32 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 1     
 	   5 Input    5 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
 	   2 Input    4 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 17    
+	   2 Input    1 Bit        Muxes := 25    
 	   5 Input    1 Bit        Muxes := 1     
 	   3 Input    1 Bit        Muxes := 4     
 	   6 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -384,30 +376,50 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7257] Removed RAM (your_cpu/my_decode/my_reg1/rf_reg) due to inactive write enable.
-WARNING: [Synth 8-6014] Unused sequential element your_cpu/my_decode/my_reg1/rf_reg was removed. 
-WARNING: [Synth 8-6014] Unused sequential element your_cpu/my_access/reg1/rf_reg was removed. 
+WARNING: [Synth 8-3936] Found unconnected internal register 'your_cpu/my_access/data_sram_addr_reg' and it is trimmed from '32' to '10' bits. [E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.srcs/sources_1/new/access.v:49]
+INFO: [Synth 8-3971] The signal "soc_top/your_cpu/reg1/rf_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1688.098 ; gain = 677.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'sys_clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1688.098 ; gain = 677.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance your_cpu/reg1/rf_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance your_cpu/reg1/rf_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -425,37 +437,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -487,41 +499,45 @@ Report Cell Usage:
 |7     |lcd_controller |     1|
 |8     |ma_river_core  |     1|
 |9     |mr_bram        |     1|
-|10    |CARRY4         |    21|
-|11    |LUT1           |     6|
-|12    |LUT2           |    11|
-|13    |LUT3           |    40|
-|14    |LUT4           |    19|
-|15    |LUT5           |    11|
-|16    |LUT6           |    75|
-|17    |FDRE           |   280|
-|18    |FDSE           |     1|
-|19    |IBUF           |     1|
-|20    |OBUF           |     6|
+|10    |BUFG           |     5|
+|11    |CARRY4         |    85|
+|12    |LUT1           |     8|
+|13    |LUT2           |   129|
+|14    |LUT3           |   175|
+|15    |LUT4           |   198|
+|16    |LUT5           |    93|
+|17    |LUT6           |   348|
+|18    |MUXF7          |     1|
+|19    |RAMB18E1       |     2|
+|20    |FDCE           |     1|
+|21    |FDRE           |   730|
+|22    |FDSE           |     2|
+|23    |IBUF           |     1|
+|24    |OBUF           |     6|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1690.816 ; gain = 571.465
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.816 ; gain = 679.559
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1688.098 ; gain = 572.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1688.098 ; gain = 677.742
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1690.816 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1688.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1690.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1688.098 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 44eded63
+Synth Design complete | Checksum: 23f94621
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 154 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1690.816 ; gain = 1139.711
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1690.816 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1688.098 ; gain = 1137.062
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1688.098 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'E:/COLLEGE/homework/hit-cdp-lab/lab5/lab5.runs/synth_1/soc_top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file soc_top_utilization_synth.rpt -pb soc_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 13 22:17:03 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 19:30:02 2024...

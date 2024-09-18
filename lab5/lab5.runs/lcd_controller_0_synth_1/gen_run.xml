@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="lcd_controller_0_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1725255221">
+<GenRun Id="lcd_controller_0_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1726655333">
   <File Type="PA-TCL" Name="lcd_controller_0.tcl"/>
   <File Type="REPORTS-TCL" Name="lcd_controller_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="lcd_controller_0.vds"/>

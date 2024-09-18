@@ -44,6 +44,7 @@ module CU(
     input [31:0] rdata1,
     input [31:0] rdata2,
     input [25:0] instr_index,
+    input [4:0]  waddr,
     output reg [31:0] wdata,
     output reg wen,
     output reg [31:0] npc_new,
@@ -62,8 +63,8 @@ parameter [4:0] SLL =5'b10000;
 reg [31:0] rdata1_unsigned;
 reg [31:0] rdata2_unsigned;
 reg [31:0] npc=32'h00000000;
-reg [4:0]  reg_addr2;
 reg [31:0] reg_rdata1;
+reg [4:0] reg_raddr2;
 
     always @(posedge out[4]) begin
         rdata1_unsigned=$unsigned(rdata1);
@@ -75,25 +76,26 @@ reg [31:0] reg_rdata1;
             select_for_pc=1'b0;
             //先解决ALU和条件转移计算问题
             if (alu_en) begin
+                
                 if (alu_card==ADD) begin
                     wdata<=rdata1+rdata2;
-                    wen=1'b1;
+                    wen=(waddr==5'b00000)?0:1;
                 end
                 else if (alu_card==SUB) begin
                     wdata=rdata1-rdata2;
-                    wen=1'b1;
+                    wen=(waddr==5'b00000)?0:1;
                 end
                 else if (alu_card==AND) begin
                     wdata=rdata1&rdata2;
-                    wen=1'b1;
+                    wen=(waddr==5'b00000)?0:1;
                 end
                 else if (alu_card==OR) begin
                     wdata=rdata1|rdata2;
-                    wen=1'b1;
+                    wen=(waddr==5'b00000)?0:1;
                 end
                 else if(alu_card==XOR) begin
                     wdata=rdata1^rdata2;
-                    wen=1'b1;
+                    wen=(waddr==5'b00000)?0:1;
                 end
                 else if (alu_card==MOVZ) begin
                     if (rdata2==0) begin
@@ -127,15 +129,16 @@ reg [31:0] reg_rdata1;
             //存数，取数,条件跳转
             if (jmp) begin
                 //条件跳转
-                reg_addr2=raddr2;
                 reg_rdata1=rdata1;
-                if (reg_rdata1[reg_addr2]==1'b1) begin
+                reg_raddr2=raddr2;
+                if (reg_rdata1[reg_raddr2]==1'b1) begin
+                    select_for_pc<=1'b1;
                     npc=pc+32'h00000004;
                     npc_new=({{16{offset[15]}}, offset[15:0]} << 2)+npc;
-                    wen=1'b0;
-                    select_for_pc=1'b1;
+                    wen=1'b0;   
                 end
                 else
+                    wen=1'b0;
                     select_for_pc=1'b0;
             end
             else if (mem_rd) begin
