@@ -91,6 +91,8 @@ design_Beat my_beat(
     .out(out)
 );
 
+
+
 initial begin
     reg_debug_wb_rf_wen = 1'b0;
 end
@@ -117,6 +119,7 @@ pc my_pc(
 inst_decoder my_decode(
     .out(out),
     .inst(inst_sram_rdata),
+    .resetn(resetn),
     .isI(isI),
     .isJ(isJ),
     .isR(isR),
@@ -140,6 +143,7 @@ inst_decoder my_decode(
 
 my_reg reg1(
     .out(out),
+    .resetn(resetn),
     .clk(clk),
     .raddr1(raddr1),
     .raddr2(raddr2),
@@ -194,7 +198,6 @@ access my_access(
     .data_sram_wdata(data_sram_wdata)
 );
 
-// 合并赋值到一个always块中
 always @(posedge out[0] or posedge out[7]) begin
     if (out[0]) begin
         reg_debug_wb_rf_wen = 1'b0;

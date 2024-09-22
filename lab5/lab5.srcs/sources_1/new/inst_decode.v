@@ -34,7 +34,8 @@
 
 module inst_decoder(
     input[31:0]         inst,//处理器待执行的指令
-    input [7:0]         out,               //时钟
+    input [7:0]         out,               //节拍
+    input               resetn,//复位
     output reg          isR,//是否是r指令
     output reg          isI,//是否是I指令
     output reg          isJ,//是否是J指令
@@ -248,8 +249,8 @@ always @(posedge out[2]) begin
         invalid<=0;
         waddr<=5'b00000;
      end
-     //不合格指令
-     else begin
+     //不合格指令，复位
+     else if (resetn==0||invalid==1) begin
         isI=0;
         isR=0;
         isJ=0;

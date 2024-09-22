@@ -18,10 +18,14 @@
   <File Type="BITSTR-MMI" Name="soc_top.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="soc_top_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="soc_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="soc_top_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="soc_top.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="soc_top_boot.pdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="soc_top.npi"/>
   <File Type="OPT-DRC" Name="soc_top_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="soc_top.rbd"/>
   <File Type="OPT-HWDEF" Name="soc_top.hwdef"/>
   <File Type="PLACE-IO" Name="soc_top_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="soc_top_utilization_placed.rpt"/>
@@ -55,17 +59,13 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="soc_top_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="soc_top_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="soc_top_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="soc_top_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="soc_top_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="soc_top_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="soc_top.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="soc_top_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="soc_top_pld.pdi"/>
   <File Type="RCFI_FILE" Name="soc_top.rcfi"/>
   <File Type="CFI_FILE" Name="soc_top.cfi"/>
   <File Type="RNPI_FILE" Name="soc_top.rnpi"/>
-  <File Type="NPI_FILE" Name="soc_top.npi"/>
-  <File Type="RBD_FILE" Name="soc_top.rbd"/>
   <File Type="ROUTE-RQS" Name="soc_top_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="soc_top_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -271,10 +271,10 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ma_river_core_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="cpu_inst_rom"/>
   <BlockFileSet Type="BlockSrcs" Name="mr_bram"/>
+  <BlockFileSet Type="BlockSrcs" Name="cpu_inst_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="ma_river_core_0"/>
   <BlockFileSet Type="BlockSrcs" Name="lcd_controller_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="cpu_data_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_ans_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="cpu_data_ram"/>
 </GenRun>

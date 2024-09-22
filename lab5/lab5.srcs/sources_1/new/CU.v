@@ -159,7 +159,7 @@ reg [4:0] reg_raddr2;
             npc_new={npc[31:28],(instr_index<<2)};
             wen=1'b0;
             select_for_pc=1'b1;
-         end
+        end
     end
 
 endmodule

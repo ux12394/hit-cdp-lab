@@ -29,6 +29,7 @@
 module my_reg(
 input [7:0] out,
 input clk,
+input resetn,
 input [4:0] raddr1,
 output reg [31:0] rdata1,
 input [4:0] raddr2,
@@ -60,13 +61,21 @@ always @(posedge out[3]) begin
     end
 end
 always @(posedge clk) begin
-    if (we)begin
-        if(waddr==5'b00000) begin
-            rf[waddr]<=32'h00000000;
+    if (resetn==1'b1) begin
+        if (we)begin
+            if(waddr==5'b00000) begin
+                rf[waddr]<=32'h00000000;
+            end
+            else    
+                rf[waddr] <= wdata;
         end
-        else    
-            rf[waddr] <= wdata;
     end
+    else if (resetn==1'b0) begin
+        for (i = 0; i < 32; i = i + 1) begin
+            rf[i] = 32'h00000000;
+        end
+    end
+    
 end
 
 

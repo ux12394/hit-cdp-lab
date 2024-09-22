@@ -47,11 +47,15 @@ always @(posedge out[0]) begin
     if(reset==1)begin
         pc=npc;
         npc=npc+32'h00000004;
-    if (select_for_pc==1'b1) begin
-        pc=next_pc;
-        npc=next_pc+32'h00000004;
-    end
+        if (select_for_pc==1'b1) begin
+            pc=next_pc;
+            npc=next_pc+32'h00000004;
+        end
     inst_sram_addr=pc;
+    end
+    else if (reset==1'b0) begin
+        pc=32'h00000000;
+        npc=32'h00000000;
     end
 end
 endmodule
